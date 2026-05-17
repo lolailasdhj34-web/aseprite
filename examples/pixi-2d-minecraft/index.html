@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PixiCraft 2D Minecraft</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main class="shell">
+      <section class="hero">
+        <p class="eyebrow">Pixi.js sandbox</p>
+        <h1>PixiCraft：2D Minecraft</h1>
+        <p>
+          挖方块、放方块、切换工具并在程序生成的像素世界里探索。
+          该示例完全基于 Pixi.js Canvas/WebGL 渲染。
+        </p>
+      </section>
+
+      <section class="game-card" aria-label="PixiCraft game">
+        <div id="game-root" class="game-root"></div>
+        <aside class="panel">
+          <h2>操作</h2>
+          <ul>
+            <li><kbd>A</kbd>/<kbd>D</kbd> 或方向键：移动</li>
+            <li><kbd>W</kbd>/<kbd>Space</kbd>：跳跃</li>
+            <li>鼠标左键：挖掘目标方块</li>
+            <li>鼠标右键：放置当前方块</li>
+            <li><kbd>1</kbd>-<kbd>5</kbd>：选择方块</li>
+            <li><kbd>R</kbd>：重建世界</li>
+          </ul>
+          <div id="status" class="status" aria-live="polite"></div>
+        </aside>
+      </section>
+    </main>
+
+    <script type="module" src="./src/main.js"></script>
+  </body>
+</html>
